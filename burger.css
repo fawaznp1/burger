@@ -1,0 +1,392 @@
+*{
+    font-family: 'Tektur', cursive;
+}
+#container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.title{
+    max-width: 600px;   
+
+}
+.griding
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6%;
+
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.logo
+{
+    width: 130px;
+    border-radius: 5px;
+}
+#home{
+/*   background-image: url('./');  
+ */  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bgimage
+{
+    display: flex;
+}
+.listitem
+{
+    display: inline-block;
+    padding: 90px ;
+    list-style: none;
+    margin: 10px    20px;
+}
+.heading{
+    align-items: center;
+    margin-left: 20px;
+}
+#about{
+    margin-left: 100px;
+}
+.heading{
+    text-align: center;
+    font-size: large;
+}
+.about-details
+{
+    margin-left: 20px;
+    font-weight: bolder;
+    max-width: 400px;
+}
+.newdiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.links
+{
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+}
+.links:hover
+{
+    color: green;
+}
+.title
+{
+    margin-left: 10%;
+/*     margin-top: 5%;
+ */}
+.title h1{
+
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.title h1 span{
+    color: brown;
+}
+p
+{
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+.knowmore
+{
+    background-color: brown;
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.burger_image
+{
+    width: 45%;
+    height: 80%;
+    position: absolute; /* container nte akath ayitt place cheyyum */
+    right: 30px;
+    bottom: 0px;
+}
+
+.burger_image img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: px;
+    top: 400px;
+    transform: translateX(-50%);/* scroll bar nte effect avide vechit scroll option kanikathe irikkan */
+    transition: bottom 1s, left 2s;/* for smooth moving */
+
+}
+/* .burger_img:hover #image1{
+    bottom:  70px;
+}
+ */.burger_image:hover #image2
+{
+    left: 40%;
+/*     transform-style:preserve-3d
+ */
+ transform-style: preserve-3d;
+}
+.burger_image:hover #image3
+{
+    right: 20%;
+}
+.burger_image:hover #image4
+{
+    left: 40%;
+}
+#m1:hover
+{
+    animation: shake 1s;
+    transition: ease-out 1s;
+}
+
+#m2:hover
+{
+    animation: shake 1s;
+}
+#m3:hover
+{
+    animation: shake 1s;
+}
+#m4:hover
+{
+    animation: shake 1s;
+}
+#m5:hover
+{
+    animation: shake 1s;
+}
+#m6:hover
+{
+    animation: shake 1s;
+}
+#m1:nth-child(1):hover{
+    background-color: #3511e6;
+}
+
+
+@keyframes shake{
+   
+    10%{
+        transform: rotate(15deg);
+    }
+
+    20%{
+        transform: rotate(-15deg);
+    }
+
+    3%{
+        transform: rotate(15deg);
+    }
+
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+#menu{
+    margin-top: 10%;
+}
+.menu-image
+{
+    margin-top: 3rem;
+    width: 200px;
+    height: 600px;
+    align-items: center;
+    display: flex;
+}
+.menu-image img{
+    width: 250px;
+    height: 300px;
+    transform: rotate3d();
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.contact{
+    height: 10vh;
+    width: 100%;
+}
+
+.con-head{
+
+    font-size: 34px;
+    text-align: center;
+/*     padding-top: 24rem;
+ */    margin-right: 3rem;
+/*     margin-top: 1rem;
+ */}
+
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon,.up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     margin: 4rem 20px;
+ */}
+
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,orangered);
+
+}
+
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+
+@keyframes shake{
+   
+    10%{
+        transform: rotate(15deg);
+    }
+
+    20%{
+        transform: rotate(-15deg);
+    }
+
+    3%{
+        transform: rotate(15deg);
+    }
+
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+footer p{
+    align-items: center;
+    margin-top: 4rem;
+    font-weight: bolder;
+}
+.foot
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
